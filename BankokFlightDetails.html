@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            
+            <!-- Logo -->
+            <a id="navlogo" class="navbar-brand" href="./index.html">
+                <img 
+                src="./images/lakbaylipadlogo.png" 
+                alt="Lakbay-Lipad Airlines"
+                height="100%">
+            </a>
+            
+            <!-- Hamburger -->
+            <button id="Hamburger" 
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            
+                <!-- Navigation -->
+                <div class="navbar-nav mx-auto text-center">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link active" href="./Flights.html">Flights</a>
+                    <a class="nav-link" href="./About.html">About</a>
+                    <a class="nav-link" href="./Contact.html">Contacts</a>
+                </div>
+                
+                <!-- Book button -->
+                <div class="text-center">
+                    <a id="book" class="btn btn-primary" href="./Flights.html">
+                        Book Now
+                    </a>
+                </div>
+            
+            </div>
+        
+        </div>
+    </nav>
+    <!-- Body Start -->
+<!------------------------------------FLIGHT HEADER----------------------------------->
+
+<section class="flight-detail-header">
+
+    <div class="container-fluid px-4">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <div class="route-label">
+
+                    <strong>
+                        FLIGHT LL-204
+                    </strong>
+
+                    <span>
+                        NON-STOP • EXPRESS ROUTE
+                    </span>
+
+                </div>
+
+
+                <h1>
+                    Manila
+                    <span>(MNL)</span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                    Bankok
+                    <span>(BKK)</span>
+                </h1>
+
+
+                <p>
+                    <i class="bi bi-calendar"></i>
+                    Friday, October 24, 2025
+
+                    <span>•</span>
+
+                    Cabin: Mabuhay Economy
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="duration-box">
+
+                    <small>
+                        TOTAL DURATION
+                    </small>
+
+                    <strong>
+                        1h 10m
+                    </strong>
+
+                    <i class="bi bi-stopwatch"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =============================================
+     DETAILS CONTENT
+============================================= -->
+
+<main class="details-page">
+
+    <div class="container-fluid px-4">
+
+        <div class="row g-4">
+
+
+            <!-- LEFT -->
+
+            <div class="col-lg-8">
+
+
+                <!-- FLIGHT INFORMATION -->
+
+                <div class="detail-card">
+
+                    <div class="detail-tabs">
+
+                        <button class="active">
+                            <i class="bi bi-airplane"></i>
+                            Flight Schedule & Route
+                        </button>
+
+                        <button>
+                            <i class="bi bi-suitcase"></i>
+                            Aircraft & Cabin Specs
+                        </button>
+
+                        <button>
+                            <i class="bi bi-shield-check"></i>
+                            Fare Conditions
+                        </button>
+
+                    </div>
+
+
+                    <div class="schedule">
+
+                        <div class="schedule-airport">
+
+                            <strong>
+                                08:20
+                            </strong>
+
+                            <h4>
+                                Manila (MNL)
+                            </h4>
+
+                            <small>
+                                Ninoy Aquino Intl Airport
+                            </small>
+
+                            <span>
+                                <i class="bi bi-building"></i>
+                                Terminal 2 • Gate 14
+                            </span>
+
+                        </div>
+
+
+                        <div class="schedule-middle">
+
+                            <small>
+                                <i class="bi bi-circle-fill"></i>
+                                On Time
+                            </small>
+
+                            <div class="schedule-line">
+
+                                <span></span>
+
+                                <i class="bi bi-airplane-fill"></i>
+
+                                <span></span>
+
+                            </div>
+
+                            <strong>
+                                1h 10m Direct
+                            </strong>
+
+                            <small>
+                                Airbus A321neo • EcoCruise 820 km/h
+                            </small>
+
+                        </div>
+
+
+                        <div class="schedule-airport text-end">
+
+                            <strong>
+                                09:30
+                            </strong>
+
+                            <h4>
+                                Bankok (BKK)
+                            </h4>
+
+                            <small>
+                                Godofredo P. Ramos Airport
+                            </small>
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Boracay Gateway Terminal
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SPECS -->
+
+                    <div class="specs">
+
+                        <div>
+
+                            <i class="bi bi-person-wheelchair"></i>
+
+                            <span>
+                                SEAT PITCH
+                                <strong>
+                                    31 inches
+                                </strong>
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="bi bi-grid-3x3-gap"></i>
+
+                            <span>
+                                LAYOUT
+                                <strong>
+                                    3 - 3 Seating
+                                </strong>
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="bi bi-plug"></i>
+
+                            <span>
+                                POWER
+                                <strong>
+                                    USB-A & C
+                                </strong>
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="bi bi-cup-straw"></i>
+
+                            <span>
+                                HOSPITALITY
+                                <strong>
+                                    Snack & Drink
+                                </strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FARE EXPERIENCE -->
+
+                <div class="detail-card fare-experience">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <h3>
+                                Choose Your Cabin Fare Experience
+                            </h3>
+
+                            <p>
+                                Select a pre-bundled tier to maximize
+                                baggage and flexibility savings.
+                            </p>
+
+                        </div>
+
+                        <span>
+                            SELECTED: STANDARD
+                        </span>
+
+                    </div>
+
+
+                    <div class="row g-3">
+
+
+                        <!-- STANDARD -->
+
+                        <div class="col-md-4">
+
+                            <div class="fare-card selected">
+
+                                <div class="fare-top">
+
+                                    <i class="bi bi-record-circle-fill"></i>
+
+                                    <span>BASE</span>
+
+                                </div>
+
+                                <h4>
+                                    Standard Economy
+                                </h4>
+
+                                <p>
+                                    Essential traveler tier
+                                </p>
+
+
+                                <ul>
+
+                                    <li>
+                                        <i class="bi bi-bag"></i>
+                                        7kg Carry-On Handbag
+                                    </li>
+
+                                    <li>
+                                        <i class="bi bi-suitcase"></i>
+                                        20kg Check-in Baggage
+                                    </li>
+
+                                    <li class="disabled">
+                                        Free Date Rebooking
+                                    </li>
+
+                                    <li class="disabled">
+                                        Advanced Seat Selection
+                                    </li>
+
+                                </ul>
+
+
+                                <div class="fare-bottom">
+
+                                    <small>
+                                        Total Bundle
+                                    </small>
+
+                                    <strong>
+                                        Included
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FLEXI -->
+
+                        <div class="col-md-4">
+
+                            <div class="fare-card">
+
+                                <div class="fare-top">
+
+                                    <i class="bi bi-circle"></i>
+
+                                    <span class="popular">
+                                        POPULAR
+                                    </span>
+
+                                </div>
+
+                                <h4>
+                                    Flexi Lipad
+                                </h4>
+
+                                <p>
+                                    Peace of mind for island trips
+                                </p>
+
+                                <ul>
+
+                                    <li>
+                                        <i class="bi bi-check-circle"></i>
+                                        All Standard perks
+                                    </li>
+
+                                    <li>
+                                        Free Unlimited Rebooking
+                                    </li>
+
+                                    <li>
+                                        Standard Seat Selection
+                                    </li>
+
+                                    <li>
+                                        Priority Boarding (Zone 2)
+                                    </li>
+
+                                </ul>
+
+
+                                <div class="fare-bottom">
+
+                                    <small>
+                                        Add per passenger
+                                    </small>
+
+                                    <strong class="price-red">
+                                        +₱650
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- VIP -->
+
+                        <div class="col-md-4">
+
+                            <div class="fare-card">
+
+                                <div class="fare-top">
+
+                                    <i class="bi bi-circle"></i>
+
+                                    <span class="vip">
+                                        VIP
+                                    </span>
+
+                                </div>
+
+                                <h4>
+                                    Premium Comfort
+                                </h4>
+
+                                <p>
+                                    Executive island travel
+                                </p>
+
+                                <ul>
+
+                                    <li>
+                                        30kg Check-in Baggage
+                                    </li>
+
+                                    <li>
+                                        Extra Legroom Seat
+                                    </li>
+
+                                    <li>
+                                        Hot Gourmet Meal Included
+                                    </li>
+
+                                    <li>
+                                        Priority Bag Handling
+                                    </li>
+
+                                </ul>
+
+
+                                <div class="fare-bottom">
+
+                                    <small>
+                                        Add per passenger
+                                    </small>
+
+                                    <strong>
+                                        +₱1,400
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ISLAND SERVICES -->
+
+                <div class="detail-card services-card">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <h3>
+                                Recommended Island Services
+                            </h3>
+
+                            <p>
+                                Enhance your Boracay getaway with
+                                pre-arranged essentials at special
+                                airfare rates.
+                            </p>
+
+                        </div>
+
+                        <span class="add-ons">
+                            FLIGHT ADD-ONS
+                        </span>
+
+                    </div>
+
+
+                    <div class="row g-3">
+
+
+                        <div class="col-md-4">
+
+                            <div class="service-card">
+
+                                <div>
+
+                                    <small>
+                                        LAKBAY CARE+
+                                    </small>
+
+                                    <h4>
+                                        Island Travel Insurance
+                                    </h4>
+
+                                    <p>
+                                        Up to ₱1,000,000 medical coverage,
+                                        baggage loss protection, and
+                                        emergency flight interruption
+                                        coverage.
+                                    </p>
+
+                                    <strong>
+                                        ₱320 <small>/ pax</small>
+                                    </strong>
+
+                                    <button disabled>
+                                        + ADD
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <div class="service-card">
+
+                                <div>
+
+                                    <small>
+                                        SEAMLESS TRANSIT
+                                    </small>
+
+                                    <h4>
+                                        Airport Transfer Shuttle
+                                    </h4>
+
+                                    <p>
+                                        Complete land shuttle from
+                                        Bankok Airport + fast-craft
+                                        boat transfer.
+                                    </p>
+
+                                    <strong>
+                                        ₱450 <small>/ pax</small>
+                                    </strong>
+
+                                    <button disabled>
+                                        + ADD
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <div class="service-card">
+
+                                <div>
+
+                                    <small>
+                                        KUSINA PILIPINAS
+                                    </small>
+
+                                    <h4>
+                                        Hot In-Flight Meals
+                                    </h4>
+
+                                    <p>
+                                        Pre-order Beef Tapa Rice or
+                                        Chicken Adobo Flakes prepared
+                                        fresh and served piping hot.
+                                    </p>
+
+                                    <strong>
+                                        ₱280 <small>/ meal</small>
+                                    </strong>
+
+                                    <button disabled>
+                                        + ADD
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 FARE SUMMARY
+            ====================================== -->
+
+            <div class="col-lg-4">
+
+                <div class="fare-summary">
+
+                    <div class="summary-heading">
+
+                        <h3>
+                            <i class="bi bi-receipt"></i>
+                            Fare Summary
+                        </h3>
+
+                        <span>
+                            1 ADULT
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-flight">
+
+                        <strong>
+                            MNL → BKK • LL-204
+                        </strong>
+
+                        <small>
+                            Mabuhay Economy • Single Way
+                        </small>
+
+                        <i class="bi bi-airplane-fill"></i>
+
+                    </div>
+
+
+                    <div class="summary-lines">
+
+                        <div>
+                            <span>Base Fare (Eco Promo)</span>
+                            <strong>₱9,350</strong>
+                        </div>
+
+                        <div>
+                            <span>Aviation Security Fee</span>
+                            <strong>₱150</strong>
+                        </div>
+
+                        <div>
+                            <span>Domestic Passenger Service</span>
+                            <strong>₱200</strong>
+                        </div>
+
+                        <div>
+                            <span>Fuel Surcharge</span>
+                            <strong>₱150</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="promo">
+
+                        <label>
+                            PROMO / MABUHAY VOUCHER
+                        </label>
+
+                        <div>
+
+                            <input
+                                type="text"
+                                placeholder="ENTER PROMO CODE">
+
+                            <button disabled>
+                                APPLY
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="total">
+
+                        <div>
+
+                            <span>Total Amount</span>
+
+                            <small>
+                                Taxes & Gov Fees included
+                            </small>
+
+                        </div>
+
+                        <strong>
+                            ₱9,980
+                            <small>PHP</small>
+                        </strong>
+
+                    </div>
+
+
+                    <a
+                        href="#"
+                        class="continue-btn">
+
+                        Continue to Passenger Details
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+
+                    <p class="secure">
+
+                        <i class="bi bi-shield-check"></i>
+
+                        256-Bit SSL Encrypted Flight Reservation
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+    <!-- Body End -->
+    
+    
+    <!--Footer Start-->
+        
+        <footer id="footer" class="text-white d-flex justify-content-center d-grid gap-2 py-3">
+            <div class="container-fluid">
+                <div class="row g-3">
+                    <!-- logo -->
+                    <div class="col-lg-3">
+                        <img src="./images/lakbay-lipadlogo.png" alt="" class="img-fluid">
+                        <p>Embodying modern commercial aviation with
+                            the buoyant warmth of Philippine hospitality.
+                            Fly with pride and comfort.
+                        </p>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-3">
+                        <h5>
+                            Company
+                        </h5>
+                        <div><a href="./Flights.html">Flights</a></div>
+                        <div><a href="./About.html">About Us</a></div>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-3">
+                        <h5>
+                            SUPPORT
+                        </h5>
+                        <a href="./Contact.html">Contact Us</a>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-3">
+                        <h5>
+                            NEWSLETTER
+                        </h5>
+                        <p>
+                            Subscribe for flight alerts and
+                            Mabuhay rewards.
+                        </p>
+                        
+                        <div class="newsletter">
+                            
+                            <input
+                            type="email"
+                            placeholder="Email address">
+                            
+                            <button>
+                                Submit
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <span>&copy;  LAKBAY-LIPAD AIRWAYS CORP. All rights reserved.
+                        |
+                        All rights reserved.
+                    </span>
+                </div>
+                
+            </footer>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
