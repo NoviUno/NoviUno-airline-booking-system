@@ -126,36 +126,45 @@ nav #Hamburger{
     width: 100%;
     padding: 0 5px;
 }
-
 .featured-cards {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 5px;
-    padding: 40px 5px;
+    flex-wrap: wrap;
 }
-
 .featured-card {
     width: 20rem;
-    height: 35rem;
+    padding: 5px;
+}
+.featured-card .card {
+    height: 100%;
+}
+.why-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.why-card {
+    width: 20rem;
+    height: 10rem;
 }
 
 /* Tablet and desktop */
 @media (min-width: 768px) {
-
     .featured-cards {
-        gap: 5px;
+        column-gap: 15px;
     }
 
     .featured-card {
         flex: 0 0 20rem;
     }
-
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-
     .featured-cards {
         flex-direction: column;
         align-items: center;
@@ -166,7 +175,6 @@ nav #Hamburger{
         width: 20rem;
         max-width: 100%;
     }
-
 }
 
 /* ---------------------------------------------------index.html end-------------------------------------- */
@@ -292,7 +300,7 @@ nav #Hamburger{
 
     border-radius: 4px;
 
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .filter-subtitle {
@@ -500,7 +508,7 @@ nav #Hamburger{
 
 .airport small {
     color: #778397;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .route-line {
@@ -529,7 +537,7 @@ nav #Hamburger{
 }
 
 .route-line span {
-    font-size: 10px;
+    font-size: 20px;
 
     color: #52647b;
 
@@ -554,7 +562,7 @@ nav #Hamburger{
 
 .route-line small {
     color: #d7193f;
-    font-size: 9px;
+    font-size: 15px;
 }
 
 
@@ -796,7 +804,7 @@ nav #Hamburger{
 
     color: #cbd6e4;
 
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.7;
 
     margin-bottom: 18px;
@@ -879,7 +887,7 @@ nav #Hamburger{
 
 .section-description {
     color: #667085;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.6;
 
     max-width: 310px;
@@ -914,14 +922,14 @@ nav #Hamburger{
 }
 
 .aircraft-card h5 {
-    font-size: 12px;
+    font-size: 15px;
     color: #132b4d;
 
     margin: 4px 0;
 }
 
 .aircraft-card p {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.5;
 
     color: #667085;
@@ -958,7 +966,7 @@ nav #Hamburger{
 .story-card p {
     color: #46566d;
 
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.65;
 
     margin-bottom: 10px;
@@ -1003,14 +1011,14 @@ nav #Hamburger{
 .story-features strong {
     display: block;
 
-    font-size: 11px;
+    font-size: 15px;
     color: #132b4d;
 }
 
 .story-features small {
     display: block;
 
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.4;
 
     color: #7a8697;
@@ -1053,7 +1061,6 @@ nav #Hamburger{
 .stat-title {
     font-size: 11px;
     font-weight: 700;
-
     color: #263c58;
 
     margin-top: 2px;
@@ -1061,11 +1068,8 @@ nav #Hamburger{
 
 .stat-card p {
     color: #8a94a4;
-
-    font-size: 8px;
+    font-size: 15px;
     line-height: 1.4;
-
-    max-width: 170px;
 
     margin: 3px 0 0;
 }
@@ -1174,7 +1178,7 @@ nav #Hamburger{
 .crew-info p {
     color: #737e8e;
 
-    font-size: 9px;
+    font-size: 15px;
     line-height: 1.55;
 
     min-height: 54px;
@@ -1329,7 +1333,7 @@ nav #Hamburger{
 .cta-box h2 {
     color: white;
 
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 800;
 
     margin-bottom: 4px;
@@ -1338,7 +1342,7 @@ nav #Hamburger{
 .cta-box p {
     color: #9facbd;
 
-    font-size: 10px;
+    font-size: 15px;
 
     max-width: 480px;
 
@@ -1355,10 +1359,10 @@ nav #Hamburger{
 .cta-primary,
 .cta-secondary {
     padding: 11px 17px;
-
+    text-decoration: none;
     border-radius: 3px;
 
-    font-size: 9px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -1446,7 +1450,7 @@ nav #Hamburger{
 .flight-detail-header p {
     color: #bdc9d7;
 
-    font-size: 10px;
+    font-size: 15px;
 
     margin: 0;
 }
@@ -1538,7 +1542,7 @@ nav #Hamburger{
 
     color: #56657a;
 
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .detail-tabs button.active {
@@ -1579,7 +1583,7 @@ nav #Hamburger{
 }
 
 .schedule-airport h4 {
-    font-size: 12px;
+    font-size: 15px;
 
     margin: 0;
 }
@@ -1589,7 +1593,7 @@ nav #Hamburger{
 
     display: block;
 
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .schedule-airport span {
@@ -1597,11 +1601,11 @@ nav #Hamburger{
 
     display: inline-block;
 
-    padding: 5px;
+    padding: 10px;
 
     margin-top: 7px;
 
-    font-size: 7px;
+    font-size: 10px;
 }
 
 .schedule-middle {
@@ -1613,13 +1617,13 @@ nav #Hamburger{
 .schedule-middle > small {
     color: #07845a;
 
-    font-size: 9px;
+    font-size: 15px;
 }
 
 .schedule-middle > strong {
     display: block;
 
-    font-size: 9px;
+    font-size: 15px;
 
     margin-top: 5px;
 }
@@ -1627,7 +1631,7 @@ nav #Hamburger{
 .schedule-middle > small:last-child {
     color: #68778b;
 
-    font-size: 7px;
+    font-size: 12px;
 }
 
 .schedule-line {
@@ -1688,7 +1692,7 @@ nav #Hamburger{
 }
 
 .specs span {
-    font-size: 8px;
+    font-size: 12px;
 
     color: #68778b;
 }
@@ -1698,7 +1702,7 @@ nav #Hamburger{
 
     color: #102d52;
 
-    font-size: 10px;
+    font-size: 15px;
 }
 
 
@@ -1717,7 +1721,7 @@ nav #Hamburger{
 }
 
 .section-heading h3 {
-    font-size: 16px;
+    font-size: 20px;
 
     margin: 0;
 }
@@ -1725,7 +1729,7 @@ nav #Hamburger{
 .section-heading p {
     color: #718096;
 
-    font-size: 9px;
+    font-size: 15px;
 
     margin: 3px 0 0;
 }
@@ -1737,7 +1741,7 @@ nav #Hamburger{
 
     color: #173555;
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: bold;
 }
@@ -1771,7 +1775,7 @@ nav #Hamburger{
 
     color: #173555;
 
-    font-size: 7px;
+    font-size: 12px;
 
     padding: 4px 6px;
 
@@ -1788,7 +1792,7 @@ nav #Hamburger{
 }
 
 .fare-card h4 {
-    font-size: 13px;
+    font-size: 18px;
 
     margin: 10px 0 3px;
 }
@@ -1796,7 +1800,7 @@ nav #Hamburger{
 .fare-card p {
     color: #6e7b8e;
 
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .fare-card ul {
@@ -1804,7 +1808,7 @@ nav #Hamburger{
 
     list-style: none;
 
-    font-size: 8px;
+    font-size: 15px;
 
     line-height: 1.8;
 
@@ -1832,11 +1836,11 @@ nav #Hamburger{
 .fare-bottom small {
     color: #69778b;
 
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .fare-bottom strong {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .price-red {
@@ -1885,11 +1889,11 @@ nav #Hamburger{
 
     font-weight: bold;
 
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .service-card h4 {
-    font-size: 12px;
+    font-size: 18px;
 
     margin: 5px 0;
 }
@@ -1897,13 +1901,13 @@ nav #Hamburger{
 .service-card p {
     color: #69778b;
 
-    font-size: 8px;
+    font-size: 12px;
 
     min-height: 40px;
 }
 
 .service-card > div > strong {
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .service-card button {
@@ -1919,7 +1923,7 @@ nav #Hamburger{
 
     border-radius: 5px;
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: bold;
 }
@@ -1954,7 +1958,7 @@ nav #Hamburger{
 }
 
 .summary-heading h3 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .summary-heading h3 i {
@@ -1966,7 +1970,7 @@ nav #Hamburger{
 
     padding: 5px;
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: bold;
 }
@@ -1988,13 +1992,13 @@ nav #Hamburger{
 .summary-flight strong {
     display: block;
 
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .summary-flight small {
     color: #66758a;
 
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .summary-flight i {
@@ -2012,7 +2016,7 @@ nav #Hamburger{
 
     justify-content: space-between;
 
-    font-size: 9px;
+    font-size: 14px;
 
     margin-bottom: 9px;
 }
@@ -2026,7 +2030,7 @@ nav #Hamburger{
 }
 
 .promo label {
-    font-size: 8px;
+    font-size: 15px;
 
     font-weight: bold;
 
@@ -2046,7 +2050,7 @@ nav #Hamburger{
 
     padding: 8px;
 
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .promo button {
@@ -2080,7 +2084,7 @@ nav #Hamburger{
 .total span {
     display: block;
 
-    font-size: 11px;
+    font-size: 16px;
 
     font-weight: bold;
 }
@@ -2090,7 +2094,7 @@ nav #Hamburger{
 
     color: #8993a2;
 
-    font-size: 7px;
+    font-size: 11px;
 }
 
 .total > strong {
@@ -2100,27 +2104,20 @@ nav #Hamburger{
 .total > strong small {
     display: inline;
 
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .continue-btn {
     display: block;
-
     background: #d7193f;
-
     color: white;
-
     text-align: center;
-
     padding: 12px;
-
     border-radius: 7px;
-
     margin-top: 15px;
-
-    font-size: 10px;
-
+    font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .continue-btn:hover {
@@ -2134,7 +2131,7 @@ nav #Hamburger{
 
     color: #7b8797;
 
-    font-size: 7px;
+    font-size: 11px;
 
     margin: 12px 0 0;
 }
@@ -2188,6 +2185,10 @@ nav #Hamburger{
 
 .contact-card {
     width: 20rem;
+}
+
+.contact-card .card {
+    height: 100%;
 }
 @media (max-width: 767px) {
 
